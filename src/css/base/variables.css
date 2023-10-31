@@ -1,0 +1,21 @@
+/**  Variables **/
+:root {
+  /*colores*/
+  --blanco: #ffffff;
+  --oscuro: #212121;
+  --primario: #0040ff;
+  --secundario: #86d3ff;
+  --amarillo: #ffc107;
+  --gris: #757575;
+  --grisOscuro: #333333;
+  --grisClaro: #dfe9f3;
+
+  /*tipografia*/
+  --fuente_principal: "Lato", sans-serif;
+
+  /*Tamaños de Media Queries*/
+  --telefono: 480px;
+  --tablet: 768px;
+  --desktop: 992px;
+  --desktopXL: 1200px;
+}

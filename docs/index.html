@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Programador Web</title>
+    
+    
+    <link rel="stylesheet" href="/assets/styles-270d35dd.css">
+  </head>
+  <body class="index-page">
+    <header>
+      <h1 class="titulo">Jose Ramón <span>Programador Web</span></h1>
+
+      <nav class="navegacion-principal">
+        <a href="index.html">Inicio</a>
+        <a href="sobre-mi.html">Sobre Mi</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="contacto.html">Contacto</a>
+      </nav>
+
+      <section class="hero">
+        <div class="contenido-hero">
+          <h2>Diseño y Desarrollo Web</h2>
+          <div class="ubicacion">
+            <img src="/assets/ti-mapPin-06c249a5.svg" alt="icono de ubicacion" />
+            <p>Valencia, España</p>
+          </div>
+          <a class="boton" href="contacto.html">Contactar</a>
+        </div>
+        <!-- .contenido-hero -->
+      </section>
+    </header>
+
+    <main>
+      <section class="contenedor sombra resumen-servicios">
+        <h2>
+          Mis Servicios
+          <span>
+            &nbsp;Sección <a href="servicios.html">Servicios</a> para más
+            información
+          </span>
+        </h2>
+        <div class="servicios">
+          <div class="servicio">
+            <h3>Frontend</h3>
+            <div class="iconos">
+              <img src="/assets/ti-brandHtml5-8ac89c03.svg" alt="icono de html5" />
+              <img src="/assets/ti-brandCss3-943449f9.svg" alt="icono de css3" />
+              <img
+                src="/assets/ti-brandJavascript-4903bb01.svg"
+                alt="icono de javascript"
+              />
+            </div>
+            <p>
+              Creación de sitios y aplicaciones web. Diseño responsive. PWA.
+              Vanilla javiscript y frameworks modernos. Optimización para SEO
+            </p>
+          </div>
+
+          <div class="servicio">
+            <h3>Desarrollador Full Stack</h3>
+            <div class="iconos">
+              <!--              <img src="assets/img/ti-api.svg" alt="icono de api" />-->
+              <p class="text-img">API</p>
+              <img src="/assets/ti-database-c80aa671.svg" alt="icono de database" />
+            </div>
+            <p>
+              Backend. Creación de APIs que se comuniquen con Frontend.
+              Inserción y respaldo segura del información en Bases de Datos. SSR
+            </p>
+          </div>
+
+          <div class="servicio">
+            <h3>Despliegue y testing</h3>
+            <div class="iconos">
+              <img
+                src="/assets/ti-cloudComputing-89139b0a.svg"
+                alt="icono de cloud computing"
+              />
+              <img src="/assets/ti-docker-f2d1e9e1.svg" alt="icono de docker" />
+              <img src="/assets/ti-aws-83848d72.svg" alt="icono de api" />
+            </div>
+            <p>
+              Despliegue de aplicaciones web, empleando las últimas tecnologías
+              cloud, docker. Testing
+            </p>
+          </div>
+        </div>
+        <!--.servicios-->
+      </section>
+
+      <section class="contenedor sombra formulario-contacto">
+        <h2>Contacto</h2>
+        <form>
+          <fieldset>
+            <legend>Contáctame</legend>
+
+            <div class="contenedor-campos">
+              <div class="campo">
+                <label for="nombre">Nombre</label>
+                <input
+                  class="input-text"
+                  type="text"
+                  id="nombre"
+                  placeholder="Tu Nombre"
+                />
+              </div>
+              <div class="campo">
+                <label for="telefono">Teléfono</label>
+                <input
+                  class="input-text"
+                  type="tel"
+                  id="telefono"
+                  placeholder="Tu Teléfono"
+                />
+              </div>
+              <div class="campo">
+                <label for="correo">Correo</label>
+                <input
+                  class="input-text"
+                  type="email"
+                  id="correo"
+                  placeholder="Tu Email"
+                />
+              </div>
+              <div class="campo">
+                <label for="mensaje">Mensaje</label>
+                <textarea
+                  class="input-text"
+                  id="mensaje"
+                  placeholder="Expón cuál es tu proyecto, qué tipo de web y funcionalidad quieres que implementemos"
+                ></textarea>
+              </div>
+            </div>
+            <!-- .contenedor-campos -->
+
+            <div class="alinear-derecha flex">
+              <input class="boton w-sm-100" type="submit" value="Enviar" />
+            </div>
+          </fieldset>
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Todos los derechos reservados. Jose Ramon</p>
+    </footer>
+  </body>
+</html>

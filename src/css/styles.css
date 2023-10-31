@@ -1,0 +1,12 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700,900");
+@import url("base/normalize.css");
+@import url("base/variables.css");
+@import url("base/globales.css");
+@import url("base/utilidades.css");
+@import url("base/componentes.css");
+@import url("layout/header.css");
+@import url("layout/footer.css");
+@import url("pages/index-page.css");
+@import url("pages/contacto.css");
+@import url("pages/servicios.css");
+@import url("pages/sobre-mi.css");
