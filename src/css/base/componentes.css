@@ -23,6 +23,9 @@
   text-align: center;
   border: none;
 }
+.boton:disabled {
+  opacity: 0.4;
+}
 @media (min-width: 768px) {
   .boton {
     width: auto;
@@ -30,4 +33,39 @@
 }
 .boton:hover {
   cursor: pointer;
+}
+.icono-loading {
+  display: block;
+  margin: 0 auto;
+  height: 6rem;
+  width: 6rem;
+  animation-name: rotate-loading;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+@keyframes rotate-loading {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+.alerta-exito {
+  background-color: var(--success);
+  color: var(--success-contrast);
+  text-align: center;
+  padding: 1rem;
+  border-radius: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 2.5rem;
+}
+.alerta-error-form {
+  background-color: var(--danger);
+  color: var(--danger-contrast);
+  text-align: center;
+  padding: 1rem;
+  line-height: 2rem;
 }

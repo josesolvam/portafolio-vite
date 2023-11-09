@@ -6,7 +6,8 @@
     <title>Programador Web</title>
     
     
-    <link rel="stylesheet" href="/portafolio/assets/styles-5d93fa04.css">
+    <script type="module" crossorigin src="/portafolio/assets/validacion-form-103f8770.js"></script>
+    <link rel="stylesheet" href="/portafolio/assets/styles-db3af922.css">
   </head>
   <body class="index-page">
     <header>
@@ -92,7 +93,7 @@
 
       <section class="contenedor sombra formulario-contacto">
         <h2>Contacto</h2>
-        <form>
+        <form id="formulario">
           <fieldset>
             <legend>Contáctame</legend>
 
@@ -103,6 +104,7 @@
                   class="input-text"
                   type="text"
                   id="nombre"
+                  name="nombre"
                   placeholder="Tu Nombre"
                 />
               </div>
@@ -112,6 +114,7 @@
                   class="input-text"
                   type="tel"
                   id="telefono"
+                  name="telefono"
                   placeholder="Tu Teléfono"
                 />
               </div>
@@ -121,6 +124,7 @@
                   class="input-text"
                   type="email"
                   id="correo"
+                  name="correo"
                   placeholder="Tu Email"
                 />
               </div>
@@ -129,6 +133,7 @@
                 <textarea
                   class="input-text"
                   id="mensaje"
+                  name="mensaje"
                   placeholder="Expón cuál es tu proyecto, qué tipo de web y funcionalidad quieres que implementemos"
                 ></textarea>
               </div>
@@ -136,7 +141,9 @@
             <!-- .contenedor-campos -->
 
             <div class="alinear-derecha flex">
-              <input class="boton w-sm-100" type="submit" value="Enviar" />
+              <button class="boton w-sm-100" type="submit" disabled>
+                Enviar
+              </button>
             </div>
           </fieldset>
         </form>
@@ -146,5 +153,6 @@
     <footer class="footer">
       <p>Todos los derechos reservados. Jose Ramon</p>
     </footer>
+    
   </body>
 </html>

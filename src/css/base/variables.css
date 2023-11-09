@@ -9,6 +9,10 @@
   --gris: #757575;
   --grisOscuro: #333333;
   --grisClaro: #dfe9f3;
+  --success: #2dd36f;
+  --success-contrast: #000000;
+  --danger: #eb445a;
+  --danger-contrast: #ffffff;
 
   /*tipografia*/
   --fuente_principal: "Lato", sans-serif;
