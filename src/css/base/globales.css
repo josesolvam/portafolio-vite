@@ -15,7 +15,7 @@ body {
   background: linear-gradient(
     to bottom,
     var(--grisClaro) 0%,
-    var(--blanco) 100%
+    var(--grisMuyClaro) 100%
   );
 }
 
