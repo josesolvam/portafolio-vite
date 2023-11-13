@@ -1,4 +1,4 @@
-import { navegacion } from "./layout/navegacion.js";
+import { navegacion } from "./funcionalidades/navegacion.js";
 
 document.addEventListener("DOMContentLoaded", function () {
   navegacion();

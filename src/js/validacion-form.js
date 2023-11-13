@@ -1,7 +1,16 @@
 import { datoValido } from "./helpers/validators.js";
-
 import srcLoading from "../assets/img/ti-rotateClockwise.svg";
+import {
+  inputNombre,
+  inputTelefono,
+  inputCorreo,
+  inputMensaje,
+  form,
+  btnSubmit,
+} from "./selectores/selectores.js";
+
 document.addEventListener("DOMContentLoaded", function () {
+  const divErrorTelOrCorreo = document.createElement("DIV");
   const puedeEnviarse = {
     nombre: false,
     telefono: false,
@@ -9,29 +18,24 @@ document.addEventListener("DOMContentLoaded", function () {
     mensaje: false,
   };
 
-  // Seleccionar los elementos del DOM
-  const inputNombre = document.querySelector("#nombre");
-  const inputTelefono = document.querySelector("#telefono");
-  const inputCorreo = document.querySelector("#correo");
-  const inputMensaje = document.querySelector("#mensaje");
-  const form = document.querySelector("#formulario");
-  const btnSubmit = document.querySelector('#formulario button[type="submit"]');
-  const divErrorTelOrCorreo = document.createElement("DIV");
-  divErrorTelOrCorreo.setAttribute("id", "error-tel-correo");
-  // alertaExito.textContent = "Mensaje enviado correctamente";
-  inputCorreo.parentElement.appendChild(divErrorTelOrCorreo);
-
-  // Asignar eventos
-  inputNombre.addEventListener("blur", validar);
-  inputTelefono.addEventListener("blur", validar);
-  inputCorreo.addEventListener("blur", validar);
-  inputMensaje.addEventListener("blur", validar);
-  form.addEventListener("submit", enviarEmail);
-
+  implementarElementosDOM();
+  asignarEventos();
   // Inicializar el formulario en el caso de que se establezcan valores iniciales
   // resetFormulario();
 
-  // Funciones
+  function implementarElementosDOM() {
+    divErrorTelOrCorreo.setAttribute("id", "error-tel-correo");
+    // alertaExito.textContent = "Mensaje enviado correctamente";
+    inputCorreo.parentElement.appendChild(divErrorTelOrCorreo);
+  }
+  function asignarEventos() {
+    inputNombre.addEventListener("blur", validar);
+    inputTelefono.addEventListener("blur", validar);
+    inputCorreo.addEventListener("blur", validar);
+    inputMensaje.addEventListener("blur", validar);
+    form.addEventListener("submit", enviarEmail);
+  }
+
   function enviarEmail(event) {
     event.preventDefault();
     if (!formularioValido()) {

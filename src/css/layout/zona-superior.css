@@ -1,16 +1,66 @@
 /** Título **/
-/*.titulo h1 {*/
-/*  font-size: 3rem;*/
-/*}*/
-.titulo span {
-  font-size: 0.5em;
+.zona-titulo {
+  display: grid;
+  grid-template-columns: 11fr 1fr;
+  column-gap: 2rem;
+  padding: 0 1rem;
+  justify-content: center;
+  align-items: center;
 }
-/*@media (min-width: 480px) {*/
-/*  .titulo h1 {*/
-/*    font-size: 3.8rem;*/
-/*  }*/
-/*}*/
-
+.zona-titulo span {
+  display: block;
+  margin-top: 1rem;
+  margin-left: 25%;
+  font-size: 0.5em;
+  color: var(--indigo);
+}
+@media (min-width: 768px) {
+  .zona-titulo span {
+    display: inline-block;
+    margin-top: 0;
+    margin-left: 7%;
+  }
+}
+.zona-titulo .twitter-link {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  background-color: var(--color-twitter);
+  border-radius: 50%;
+  height: 4rem;
+  width: 4rem;
+  padding: 0.5rem;
+}
+.twitter-link img {
+  filter: invert(100%);
+}
+.twitter-link .tooltip-twitter {
+  position: absolute;
+  font-size: 1.4rem;
+  top: 0;
+  left: 0;
+  color: var(--indigo);
+  opacity: 0;
+  transform: translateX(0);
+  transition: all 0.3s;
+  margin: 0 auto;
+  padding-top: 1.3rem;
+}
+@media (min-width: 480px) {
+  .twitter-link:hover .tooltip-twitter {
+    opacity: 1;
+    transform: translateX(-7rem);
+  }
+}
+@media (min-width: 768px) {
+  .twitter-link .tooltip-twitter {
+    font-size: 2rem;
+    padding-top: 1rem;
+  }
+  .twitter-link:hover .tooltip-twitter {
+    transform: translateX(-10rem);
+  }
+}
 /** Navegacion Principal **/
 header {
   position: sticky;
