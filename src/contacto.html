@@ -13,23 +13,42 @@
     <link href="css/styles.css" rel="stylesheet" />
   </head>
   <body class="contacto-page">
+    <section class="titulo">
+      <h1>Jose Ramón <span>Programador Web</span></h1>
+    </section>
     <header>
-      <h1 class="titulo">Jose Ramón <span>Programador Web</span></h1>
-
-      <nav class="navegacion-principal">
+      <div id="menu-movil" class="menu-movil">
+        <img
+          id="menu-icon"
+          src="assets/img/ti-menu2.svg"
+          alt="icono menu responsive"
+        />
+      </div>
+      <nav id="navegacion-principal" class="navegacion-principal">
         <a href="index.html">Inicio</a>
         <a href="sobre-mi.html">Sobre Mi</a>
         <a href="servicios.html">Servicios</a>
-        <a href="contacto.html">Contacto</a>
+        <a class="seleccionado" href="contacto.html">Contacto</a>
       </nav>
-
-      <section class="hero-contacto">
-        <div class="contenido-hero">
-          <h2>Contacto</h2>
-        </div>
-        <!-- .contenido-hero -->
-      </section>
     </header>
+    <aside id="sidebar" class="sidebar">
+      <img
+        id="close-menu-icon"
+        class="closebtn"
+        src="assets/img/ti-x.svg"
+        alt="icono cerrar menu"
+      />
+      <a href="index.html">Inicio</a>
+      <a href="sobre-mi.html">Sobre Mi</a>
+      <a href="servicios.html">Servicios</a>
+      <a class="seleccionado" href="contacto.html">Contacto</a>
+    </aside>
+    <section class="hero-contacto">
+      <div class="contenido-hero">
+        <h2>Contacto</h2>
+      </div>
+      <!-- .contenido-hero -->
+    </section>
 
     <main class="contenedor sombra formulario-contacto">
       <h3>Rellene el formulario de contacto</h3>
@@ -88,4 +107,5 @@
     </footer>
     <script src="js/validacion-form.js" type="module"></script>
   </body>
+  <script src="js/main.js" type="module"></script>
 </html>

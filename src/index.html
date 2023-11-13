@@ -13,28 +13,48 @@
     <link href="css/styles.css" rel="stylesheet" />
   </head>
   <body class="index-page">
+    <section class="titulo">
+      <h1>Jose Ramón <span>Programador Web</span></h1>
+    </section>
     <header>
-      <h1 class="titulo">Jose Ramón <span>Programador Web</span></h1>
-
-      <nav class="navegacion-principal">
-        <a href="index.html">Inicio</a>
+      <div id="menu-movil" class="menu-movil">
+        <img
+          id="menu-icon"
+          src="assets/img/ti-menu2.svg"
+          alt="icono menu responsive"
+        />
+      </div>
+      <nav id="navegacion-principal" class="navegacion-principal">
+        <a class="seleccionado" href="index.html">Inicio</a>
         <a href="sobre-mi.html">Sobre Mi</a>
         <a href="servicios.html">Servicios</a>
         <a href="contacto.html">Contacto</a>
       </nav>
-
-      <section class="hero">
-        <div class="contenido-hero">
-          <h2>Diseño y Desarrollo Web</h2>
-          <div class="ubicacion">
-            <img src="assets/img/ti-mapPin.svg" alt="icono de ubicacion" />
-            <p>Valencia, España</p>
-          </div>
-          <a class="boton" href="contacto.html">Contactar</a>
-        </div>
-        <!-- .contenido-hero -->
-      </section>
     </header>
+    <aside id="sidebar" class="sidebar">
+      <img
+        id="close-menu-icon"
+        class="closebtn"
+        src="assets/img/ti-x.svg"
+        alt="icono cerrar menu"
+      />
+      <a class="seleccionado" href="index.html">Inicio</a>
+      <a href="sobre-mi.html">Sobre Mi</a>
+      <a href="servicios.html">Servicios</a>
+      <a href="contacto.html">Contacto</a>
+    </aside>
+
+    <section class="hero">
+      <div class="contenido-hero">
+        <h2>Diseño y Desarrollo Web</h2>
+        <div class="ubicacion">
+          <img src="assets/img/ti-mapPin.svg" alt="icono de ubicacion" />
+          <p>Valencia, España</p>
+        </div>
+        <a class="boton" href="contacto.html">Contactar</a>
+      </div>
+      <!-- .contenido-hero -->
+    </section>
 
     <main>
       <section class="contenedor sombra resumen-servicios">
@@ -156,6 +176,7 @@
     <footer class="footer">
       <p>Todos los derechos reservados. Jose Ramon</p>
     </footer>
+    <script src="js/main.js" type="module"></script>
     <script src="js/validacion-form.js" type="module"></script>
   </body>
 </html>

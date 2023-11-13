@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
     mensaje: false,
   };
 
-  // Seleccionar los elementos de la interfaz
+  // Seleccionar los elementos del DOM
   const inputNombre = document.querySelector("#nombre");
   const inputTelefono = document.querySelector("#telefono");
   const inputCorreo = document.querySelector("#correo");

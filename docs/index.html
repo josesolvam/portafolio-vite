@@ -11,32 +11,53 @@
     />
     
     
-    <script type="module" crossorigin src="/portafolio/assets/validacion-form-103f8770.js"></script>
-    <link rel="stylesheet" href="/portafolio/assets/styles-433ecfa7.css">
+    <script type="module" crossorigin src="/portafolio/assets/main-4bf2e53b.js"></script>
+    <script type="module" crossorigin src="/portafolio/assets/validacion-form-e73641ea.js"></script>
+    <link rel="stylesheet" href="/portafolio/assets/main-fa5570a0.css">
   </head>
   <body class="index-page">
+    <section class="titulo">
+      <h1>Jose Ramón <span>Programador Web</span></h1>
+    </section>
     <header>
-      <h1 class="titulo">Jose Ramón <span>Programador Web</span></h1>
-
-      <nav class="navegacion-principal">
-        <a href="index.html">Inicio</a>
+      <div id="menu-movil" class="menu-movil">
+        <img
+          id="menu-icon"
+          src="/portafolio/assets/ti-menu2-98bc398d.svg"
+          alt="icono menu responsive"
+        />
+      </div>
+      <nav id="navegacion-principal" class="navegacion-principal">
+        <a class="seleccionado" href="index.html">Inicio</a>
         <a href="sobre-mi.html">Sobre Mi</a>
         <a href="servicios.html">Servicios</a>
         <a href="contacto.html">Contacto</a>
       </nav>
-
-      <section class="hero">
-        <div class="contenido-hero">
-          <h2>Diseño y Desarrollo Web</h2>
-          <div class="ubicacion">
-            <img src="/portafolio/assets/ti-mapPin-06c249a5.svg" alt="icono de ubicacion" />
-            <p>Valencia, España</p>
-          </div>
-          <a class="boton" href="contacto.html">Contactar</a>
-        </div>
-        <!-- .contenido-hero -->
-      </section>
     </header>
+    <aside id="sidebar" class="sidebar">
+      <img
+        id="close-menu-icon"
+        class="closebtn"
+        src="/portafolio/assets/ti-x-ab0e7fd9.svg"
+        alt="icono cerrar menu"
+      />
+      <a class="seleccionado" href="index.html">Inicio</a>
+      <a href="sobre-mi.html">Sobre Mi</a>
+      <a href="servicios.html">Servicios</a>
+      <a href="contacto.html">Contacto</a>
+    </aside>
+
+    <section class="hero">
+      <div class="contenido-hero">
+        <h2>Diseño y Desarrollo Web</h2>
+        <div class="ubicacion">
+          <img src="/portafolio/assets/ti-mapPin-06c249a5.svg" alt="icono de ubicacion" />
+          <p>Valencia, España</p>
+        </div>
+        <a class="boton" href="contacto.html">Contactar</a>
+      </div>
+      <!-- .contenido-hero -->
+    </section>
 
     <main>
       <section class="contenedor sombra resumen-servicios">
@@ -158,6 +179,7 @@
     <footer class="footer">
       <p>Todos los derechos reservados. Jose Ramon</p>
     </footer>
+    
     
   </body>
 </html>

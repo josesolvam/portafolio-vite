@@ -13,15 +13,36 @@
     <link href="css/styles.css" rel="stylesheet" />
   </head>
   <body class="sobre-mi-page">
+    <section class="titulo">
+      <h1>Jose Ramón <span>Programador Web</span></h1>
+    </section>
     <header>
-      <h1 class="titulo">Jose Ramón <span>Programador Web</span></h1>
-      <nav class="navegacion-principal">
+      <div id="menu-movil" class="menu-movil">
+        <img
+          id="menu-icon"
+          src="assets/img/ti-menu2.svg"
+          alt="icono menu responsive"
+        />
+      </div>
+      <nav id="navegacion-principal" class="navegacion-principal">
         <a href="index.html">Inicio</a>
-        <a href="sobre-mi.html">Sobre Mi</a>
+        <a class="seleccionado" href="sobre-mi.html">Sobre Mi</a>
         <a href="servicios.html">Servicios</a>
         <a href="contacto.html">Contacto</a>
       </nav>
     </header>
+    <aside id="sidebar" class="sidebar">
+      <img
+        id="close-menu-icon"
+        class="closebtn"
+        src="assets/img/ti-x.svg"
+        alt="icono cerrar menu"
+      />
+      <a href="index.html">Inicio</a>
+      <a class="seleccionado" href="sobre-mi.html">Sobre Mi</a>
+      <a href="servicios.html">Servicios</a>
+      <a href="contacto.html">Contacto</a>
+    </aside>
 
     <main class="contenedor sombra sobre-mi">
       <h2>Sobre mi</h2>
@@ -110,5 +131,6 @@
     <footer class="footer">
       <p>Todos los derechos reservados. Jose Ramon</p>
     </footer>
+    <script src="js/main.js" type="module"></script>
   </body>
 </html>

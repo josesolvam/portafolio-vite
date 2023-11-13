@@ -11,18 +11,40 @@
     />
     
     
-    <link rel="stylesheet" href="/portafolio/assets/styles-433ecfa7.css">
+    <script type="module" crossorigin src="/portafolio/assets/main-4bf2e53b.js"></script>
+    <link rel="stylesheet" href="/portafolio/assets/main-fa5570a0.css">
   </head>
   <body class="servicios-page">
+    <section class="titulo">
+      <h1>Jose Ramón <span>Programador Web</span></h1>
+    </section>
     <header>
-      <h1 class="titulo">Jose Ramón <span>Programador Web</span></h1>
-      <nav class="navegacion-principal">
+      <div id="menu-movil" class="menu-movil">
+        <img
+          id="menu-icon"
+          src="/portafolio/assets/ti-menu2-98bc398d.svg"
+          alt="icono menu responsive"
+        />
+      </div>
+      <nav id="navegacion-principal" class="navegacion-principal">
         <a href="index.html">Inicio</a>
         <a href="sobre-mi.html">Sobre Mi</a>
-        <a href="servicios.html">Servicios</a>
+        <a class="seleccionado" href="servicios.html">Servicios</a>
         <a href="contacto.html">Contacto</a>
       </nav>
     </header>
+    <aside id="sidebar" class="sidebar">
+      <img
+        id="close-menu-icon"
+        class="closebtn"
+        src="/portafolio/assets/ti-x-ab0e7fd9.svg"
+        alt="icono cerrar menu"
+      />
+      <a href="index.html">Inicio</a>
+      <a href="sobre-mi.html">Sobre Mi</a>
+      <a class="seleccionado" href="servicios.html">Servicios</a>
+      <a href="contacto.html">Contacto</a>
+    </aside>
 
     <main class="contenedor sombra servicios">
       <h2>Servicios</h2>
@@ -361,5 +383,6 @@
     <footer class="footer">
       <p>Todos los derechos reservados. Jose Ramon</p>
     </footer>
+    
   </body>
 </html>

@@ -2,7 +2,7 @@
 :root {
   /*colores*/
   --blanco: #ffffff;
-  --oscuro: #212121;
+  --negro: #000000;
   --primario: #0040ff;
   --secundario: #86d3ff;
   --amarillo: #ffc107;
@@ -10,6 +10,7 @@
   --grisOscuro: #333333;
   --grisClaro: #dfe9f3;
   --grisMuyClaro: #f7f7f7;
+  --indigo: #4561a8;
   --success: #2dd36f;
   --success-contrast: #000000;
   --danger: #eb445a;

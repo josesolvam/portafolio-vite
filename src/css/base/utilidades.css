@@ -13,3 +13,6 @@
 .flex-end {
   justify-content: flex-end;
 }
+.block-scroll {
+  overflow: hidden;
+}
