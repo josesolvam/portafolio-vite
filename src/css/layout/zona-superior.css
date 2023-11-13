@@ -10,15 +10,15 @@
 .zona-titulo span {
   display: block;
   margin-top: 1rem;
-  margin-left: 25%;
-  font-size: 0.5em;
+  margin-left: 15%;
+  font-size: 0.7em;
   color: var(--indigo);
 }
 @media (min-width: 768px) {
   .zona-titulo span {
     display: inline-block;
     margin-top: 0;
-    margin-left: 7%;
+    margin-left: 3%;
   }
 }
 .zona-titulo .twitter-link {
@@ -71,9 +71,9 @@ header {
   display: flex;
   flex-direction: row;
   align-items: center;
-  background-color: var(--primario);
+  background-color: var(--indigo-oscuro);
   height: 6rem;
-  transition: background-color 1s;
+  transition: background-color 0.7s;
 }
 .menu-movil img {
   height: 4rem;
@@ -88,8 +88,8 @@ header {
 .navegacion-principal {
   height: 6rem;
   display: none;
-  background-color: var(--primario);
-  transition: background-color 1s;
+  background-color: var(--indigo-oscuro);
+  transition: background-color 0.7s;
 }
 @media (min-width: 480px) {
   .menu-movil {

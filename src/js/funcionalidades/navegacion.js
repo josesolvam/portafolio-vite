@@ -34,13 +34,13 @@ function asignarEventos() {
   overlay.addEventListener("click", cerrarSidebar);
   window.addEventListener("scroll", function () {
     if (main.getBoundingClientRect().top < 0) {
-      menuMovil.style.backgroundColor = "var(--indigo)";
-      navegacionPrincipal.style.backgroundColor = "var(--indigo)";
-      sidebar.style.backgroundColor = "var(--indigo)";
-    } else {
       menuMovil.style.backgroundColor = "var(--primario)";
       navegacionPrincipal.style.backgroundColor = "var(--primario)";
       sidebar.style.backgroundColor = "var(--primario)";
+    } else {
+      menuMovil.style.backgroundColor = "var(--indigo-oscuro)";
+      navegacionPrincipal.style.backgroundColor = "var(--indigo-oscuro)";
+      sidebar.style.backgroundColor = "var(--indigo-oscuro)";
     }
   });
 }

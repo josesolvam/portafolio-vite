@@ -6,7 +6,7 @@
   z-index: 3;
   top: 0;
   left: 0;
-  background-color: var(--primario);
+  background-color: var(--indigo-oscuro);
   overflow-x: hidden;
   padding-top: 10rem;
   transition: width 0.5s;

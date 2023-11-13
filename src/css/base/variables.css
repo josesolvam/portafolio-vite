@@ -3,7 +3,8 @@
   /*colores*/
   --blanco: #ffffff;
   --negro: #000000;
-  --primario: #0040ff;
+  /*--primario: #0040ff;*/
+  --primario: #00a5e5;
   --secundario: #86d3ff;
   --amarillo: #ffc107;
   --gris: #757575;
@@ -11,6 +12,7 @@
   --grisClaro: #dfe9f3;
   --grisMuyClaro: #f7f7f7;
   --indigo: #4561a8;
+  --indigo-oscuro: #485984;
   --success: #2dd36f;
   --success-contrast: #000000;
   --danger: #eb445a;
