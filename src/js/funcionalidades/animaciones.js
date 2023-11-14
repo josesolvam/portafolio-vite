@@ -11,7 +11,7 @@ import {
   contenedorFormContacto,
 } from "../selectores/selectores.js";
 
-const elementosFadeIn = [
+let elementosFadeIn = [
   resumenServicios,
   contenedorFormIndex,
   sobreMi,
@@ -34,22 +34,25 @@ function fadeIn() {
   });
 }
 function initFadein(elementos) {
-  elementos.forEach((elemento) => {
-    // console.log("elemento", elemento);
-    if (elemento != null) {
+  elementosFadeIn = elementos.map((elemento) => {
+    if (elemento) {
       elemento.style.opacity = "0";
       if (elemento.getBoundingClientRect().top < window.innerHeight - 40) {
-        elemento.classList.add("fade-in");
+        elemento.style.opacity = "1";
+        // console.log(`Eliminado del array el elemento: `, elemento.id);
+        return null;
       }
     }
+    return elemento;
   });
 }
 function fadeinExec(elementos) {
   elementos.forEach((elemento) => {
-    if (elemento != null) {
-      if (elemento.getBoundingClientRect().top < window.innerHeight - 40) {
-        elemento.classList.add("fade-in");
-      }
+    if (
+      elemento &&
+      elemento.getBoundingClientRect().top < window.innerHeight - 40
+    ) {
+      elemento.classList.add("fade-in");
     }
   });
 }
