@@ -3,7 +3,6 @@
 }
 
 .servicios-page .servicio-card {
-  opacity: 0;
   padding: 3rem 2rem;
   border: 1px solid var(--gris);
   border-radius: 1rem;

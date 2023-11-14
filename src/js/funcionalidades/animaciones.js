@@ -11,40 +11,45 @@ import {
   contenedorFormContacto,
 } from "../selectores/selectores.js";
 
+const elementosFadeIn = [
+  resumenServicios,
+  contenedorFormIndex,
+  sobreMi,
+  cardServicioFontend,
+  cardServicioDesign,
+  cardServicioApiDB,
+  cardServicioDespliegue,
+  cardServicioOptimizacion,
+  cardServicioEconomico,
+  contenedorFormContacto,
+];
+
 export function animaciones() {
-  asignarEventos();
+  fadeIn();
 }
-function asignarEventos() {
-  implementarFadein([
-    resumenServicios,
-    sobreMi,
-    cardServicioFontend,
-    cardServicioDesign,
-    contenedorFormContacto,
-  ]);
+function fadeIn() {
+  initFadein(elementosFadeIn);
   window.addEventListener("scroll", function () {
-    implementarFadein([
-      resumenServicios,
-      contenedorFormIndex,
-      sobreMi,
-      cardServicioFontend,
-      cardServicioDesign,
-      cardServicioApiDB,
-      cardServicioDespliegue,
-      cardServicioOptimizacion,
-      cardServicioEconomico,
-      contenedorFormContacto,
-    ]);
+    fadeinExec(elementosFadeIn);
   });
 }
-function implementarFadein(elementos) {
+function initFadein(elementos) {
   elementos.forEach((elemento) => {
     // console.log("elemento", elemento);
-    if (
-      !!elemento &&
-      elemento.getBoundingClientRect().top < window.innerHeight - 40
-    ) {
-      elemento.classList.add("fade-in");
+    if (elemento != null) {
+      elemento.style.opacity = "0";
+      if (elemento.getBoundingClientRect().top < window.innerHeight - 40) {
+        elemento.classList.add("fade-in");
+      }
+    }
+  });
+}
+function fadeinExec(elementos) {
+  elementos.forEach((elemento) => {
+    if (elemento != null) {
+      if (elemento.getBoundingClientRect().top < window.innerHeight - 40) {
+        elemento.classList.add("fade-in");
+      }
     }
   });
 }
