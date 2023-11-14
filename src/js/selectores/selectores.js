@@ -18,3 +18,26 @@ export const form = document.querySelector("#formulario");
 export const btnSubmit = document.querySelector(
   '#formulario button[type="submit"]',
 );
+
+// Selectores elementos animados
+export const cardServicioFontend = document.querySelector(
+  ".servicio-card.frontend",
+);
+export const cardServicioDesign = document.querySelector(
+  ".servicio-card.design",
+);
+export const cardServicioApiDB = document.querySelector(
+  ".servicio-card.api-db",
+);
+export const cardServicioDespliegue = document.querySelector(
+  ".servicio-card.despliegue",
+);
+export const cardServicioOptimizacion = document.querySelector(
+  ".servicio-card.optimizacion",
+);
+export const cardServicioEconomico = document.querySelector(
+  ".servicio-card.economico",
+);
+// export const cardServicioEconomico = document.querySelector(
+//   ".servicio-card.economico",
+// );

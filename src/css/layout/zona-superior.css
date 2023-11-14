@@ -1,5 +1,6 @@
 /** Título **/
 .zona-titulo {
+  height: 12rem;
   display: grid;
   grid-template-columns: 11fr 1fr;
   column-gap: 2rem;
@@ -9,10 +10,13 @@
 }
 .zona-titulo span {
   display: block;
+  font-family: var(--fuente_grandstander);
+  font-weight: normal;
+  /*normal=400, bold=700*/
   margin-top: 1rem;
-  margin-left: 15%;
+  margin-left: 10%;
   font-size: 0.7em;
-  color: var(--indigo);
+  color: var(--azul);
 }
 @media (min-width: 768px) {
   .zona-titulo span {

@@ -3,10 +3,11 @@
   /*colores*/
   --blanco: #ffffff;
   --negro: #000000;
-  /*--primario: #0040ff;*/
+  --azul: #0040ff;
   --primario: #00a5e5;
   --secundario: #86d3ff;
   --amarillo: #ffc107;
+  --amarillo-claro: #e8dcbe;
   --gris: #757575;
   --grisOscuro: #333333;
   --grisClaro: #dfe9f3;
@@ -21,6 +22,7 @@
 
   /*tipografia*/
   --fuente_principal: "Lato", sans-serif;
+  --fuente_grandstander: "Grandstander", cursive;
 
   /*Tamaños de Media Queries*/
   --telefono: 480px;

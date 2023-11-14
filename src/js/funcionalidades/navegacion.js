@@ -1,4 +1,3 @@
-// Selectores
 import {
   body,
   menuMovil,

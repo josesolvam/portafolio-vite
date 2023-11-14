@@ -1,14 +1,19 @@
 /** Pagina index **/
 
 /* Hero */
-.index-page .hero {
+.no-webp .index-page .hero {
   background-image: url(../../assets/img/laptop.jpg);
+}
+.webp .index-page .hero {
+  background-image: url(../../assets/img/laptop.webp);
+}
+.index-page .hero {
   background-repeat: no-repeat;
   background-size: cover;
   height: 450px;
   position: relative;
-  /*margin-bottom: 2rem;*/
 }
+
 .index-page .contenido-hero {
   position: absolute;
   background-color: rgba(0, 0, 0, 0.7);

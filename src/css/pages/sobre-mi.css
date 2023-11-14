@@ -24,6 +24,10 @@
   border-radius: 50%;
 }
 .sobre-mi-page .contenido-sobre-mi h3 {
+  font-family: var(--fuente_grandstander);
+  color: var(--indigo);
+  font-size: 2rem;
+  font-weight: normal;
   margin-bottom: 4rem;
   margin-top: 0;
 }

@@ -1,7 +1,12 @@
 /** Pagina contacto **/
 /* Hero */
-.contacto-page .hero-contacto {
+.no-webp .contacto-page .hero-contacto {
   background-image: url(../../assets/img/tablet.jpg);
+}
+.webp .contacto-page .hero-contacto {
+  background-image: url(../../assets/img/tablet.webp);
+}
+.contacto-page .hero-contacto {
   background-repeat: no-repeat;
   background-size: cover;
   height: 300px;
