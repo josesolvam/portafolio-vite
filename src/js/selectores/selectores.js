@@ -20,6 +20,11 @@ export const btnSubmit = document.querySelector(
 );
 
 // Selectores elementos animados
+export const resumenServicios = document.querySelector("#resumen-servicios");
+export const contenedorFormIndex = document.querySelector(
+  "#contenedor-form-index",
+);
+export const sobreMi = document.querySelector("#sobre-mi");
 export const cardServicioFontend = document.querySelector(
   ".servicio-card.frontend",
 );
@@ -38,6 +43,6 @@ export const cardServicioOptimizacion = document.querySelector(
 export const cardServicioEconomico = document.querySelector(
   ".servicio-card.economico",
 );
-// export const cardServicioEconomico = document.querySelector(
-//   ".servicio-card.economico",
-// );
+export const contenedorFormContacto = document.querySelector(
+  "#contenedor-form-contacto",
+);

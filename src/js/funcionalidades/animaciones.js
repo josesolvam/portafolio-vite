@@ -1,25 +1,39 @@
 import {
+  resumenServicios,
+  contenedorFormIndex,
+  sobreMi,
   cardServicioFontend,
   cardServicioDesign,
   cardServicioApiDB,
   cardServicioDespliegue,
   cardServicioOptimizacion,
   cardServicioEconomico,
+  contenedorFormContacto,
 } from "../selectores/selectores.js";
 
 export function animaciones() {
   asignarEventos();
 }
 function asignarEventos() {
-  implementarFadein([cardServicioFontend, cardServicioDesign]);
+  implementarFadein([
+    resumenServicios,
+    sobreMi,
+    cardServicioFontend,
+    cardServicioDesign,
+    contenedorFormContacto,
+  ]);
   window.addEventListener("scroll", function () {
     implementarFadein([
+      resumenServicios,
+      contenedorFormIndex,
+      sobreMi,
       cardServicioFontend,
       cardServicioDesign,
       cardServicioApiDB,
       cardServicioDespliegue,
       cardServicioOptimizacion,
       cardServicioEconomico,
+      contenedorFormContacto,
     ]);
   });
 }
