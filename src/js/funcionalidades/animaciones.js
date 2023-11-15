@@ -47,12 +47,15 @@ function initFadein(elementos) {
   });
 }
 function fadeinExec(elementos) {
-  elementos.forEach((elemento) => {
+  elementosFadeIn = elementos.map((elemento) => {
     if (
       elemento &&
       elemento.getBoundingClientRect().top < window.innerHeight - 40
     ) {
       elemento.classList.add("fade-in");
+      // console.log(`Eliminado del array el elemento: `, elemento.id);
+      return null;
     }
+    return elemento;
   });
 }

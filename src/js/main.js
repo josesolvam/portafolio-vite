@@ -1,5 +1,5 @@
-import { navegacion, animaciones } from "./funcionalidades/index.js";
 import "./paquetes/modernizr-custom.js";
+import { navegacion, animaciones } from "./funcionalidades/index.js";
 
 // console.log(window.Modernizr);
 
