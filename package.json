@@ -1,6 +1,5 @@
 {
-  "name": "portafolio-vite",
-  "private": true,
+  "name": "portafolio-programador-web",
   "version": "0.0.1",
   "type": "module",
   "scripts": {

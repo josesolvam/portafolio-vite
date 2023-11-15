@@ -86,7 +86,7 @@ document.addEventListener("DOMContentLoaded", function () {
       if (dato === "") {
         limpiarAlerta(event.target.parentElement);
         if (!algunCampoLLeno(event.target.name)) {
-          mostrarAlerta("Correo o email requerido", divErrorTelOrCorreo);
+          mostrarAlerta("Teléfono o email requerido", divErrorTelOrCorreo);
         } else {
           limpiarAlerta(divErrorTelOrCorreo);
         }
